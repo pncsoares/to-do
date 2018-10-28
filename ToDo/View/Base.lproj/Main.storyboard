@@ -31,7 +31,14 @@
                             <outlet property="delegate" destination="EZ5-RV-Pve" id="JKX-U6-GBS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="To Do" id="Tzp-4L-swd"/>
+                    <navigationItem key="navigationItem" title="To Do" id="Tzp-4L-swd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bUP-ug-OcG">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="EZ5-RV-Pve" id="3oe-uh-cEr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="la0-dM-Nj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
